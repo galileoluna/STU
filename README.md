@@ -1,0 +1,1 @@
+[![coverage report](https://gitlab.com/galileoluna/STU/badges/master/coverage.svg)](https://gitlab.com/galileoluna/STU/-/commits/master)[![coverage report](https://gitlab.com/galileoluna/STU/badges/master/coverage.svg)](https://gitlab.com/galileoluna/STU/-/commits/master)
