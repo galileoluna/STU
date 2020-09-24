@@ -1,5 +1,8 @@
 package SiTU.model;
 import org.junit.Test;
+
+import model.Alumno;
+
 import static org.junit.Assert.*;
 
 

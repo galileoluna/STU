@@ -9,6 +9,7 @@ dependencies {
 	testCompile 'org.assertj:assertj-core:3.8.0'
 	// https://mvnrepository.com/artifact/org.mongodb/mongodb-driver
 	compile group: 'org.mongodb', name: 'mongodb-driver', version: '3.6.3'
+	compile ('org.web3j:core:4.6.3')
 	
 }
 jacoco {

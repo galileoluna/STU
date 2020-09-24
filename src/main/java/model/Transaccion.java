@@ -1,4 +1,4 @@
-package SiTU.model;
+package model;
 
 public class Transaccion {
 
