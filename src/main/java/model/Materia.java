@@ -1,18 +1,31 @@
 package model;
 
 public class Materia {
-	public int id;
+	public String id;
 	public String nombre;
-	public Materia(int id, String nombre) {
+	public String codigo;
+	public Materia(String id, String nombre,String codigo) {
 		this.id=id;
 		this.nombre=nombre;
+		this.codigo=codigo;
 	}
-	public int getId() {
+
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+
+	public void setId(String id) {
 		this.id = id;
 	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
