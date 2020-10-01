@@ -2,9 +2,6 @@ package data;
 
 import java.util.ArrayList;
 
-import com.mongodb.DB;
-
-import db.ConexionMongo;
 import model.Inscripcion;
 
 public class InscripcionMapper implements IInscripcionMapper{
@@ -17,13 +14,6 @@ public class InscripcionMapper implements IInscripcionMapper{
 
 	@Override
 	public void insert(Inscripcion student) {
-		ConexionMongo conect= new ConexionMongo();
-		DB database = conect.conexionMongo();
-		DBCollection collection = database.getCollection("customers");
-		BasicDBObject document = new BasicDBObject();
-		document.put("name", "Shubham");
-		document.put("company", "Baeldung");
-		collection.insert(document);
 		
 	}
 

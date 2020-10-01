@@ -12,6 +12,11 @@ public class Alumno {
 	public Alumno(String id, String nombre,String apellidos,String fechaNacimiento,String email, String password, String legajo) {
 		this.id=id;
 		this.nombre=nombre;
+		this.apellidos=apellidos;
+		this.fechaNacimiento=fechaNacimiento;
+		this.email=email;
+		this.password=password;
+		this.legajo=legajo;
 	}
 	public String getId() {
 		return id;

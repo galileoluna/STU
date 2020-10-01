@@ -143,9 +143,6 @@ public static ArrayList<Materia> getMaterias()  throws Exception{
 		} finally {
 			httpclient.close();
 		}
-		
-		
-		
 		return materias;
 		
 	}
@@ -197,7 +194,7 @@ public static ArrayList<Inscripcion> getInscripciones()  throws Exception{
 }
 	
 	
-
+/*
 	public final static void main(String[] args) throws Exception {
 		
 			System.out.println(getMaterias().size());
@@ -205,6 +202,6 @@ public static ArrayList<Inscripcion> getInscripciones()  throws Exception{
 			System.out.println(getInscripciones().size());
 	
 	}
-	
+	*/
 
 }
