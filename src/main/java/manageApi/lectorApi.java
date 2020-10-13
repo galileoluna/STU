@@ -52,6 +52,7 @@ import model.Materia;
 public class lectorApi {
 	
 	
+	
 	public static ArrayList<Alumno> getAlumnos()  throws Exception{	
 		ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
 		CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -194,7 +195,6 @@ public static ArrayList<Inscripcion> getInscripciones()  throws Exception{
 }
 	
 	
-/*
 	public final static void main(String[] args) throws Exception {
 		
 			System.out.println(getMaterias().size());
@@ -202,6 +202,6 @@ public static ArrayList<Inscripcion> getInscripciones()  throws Exception{
 			System.out.println(getInscripciones().size());
 	
 	}
-	*/
+
 
 }
