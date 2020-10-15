@@ -73,7 +73,6 @@ public class lectorApi {
 						throw new ClientProtocolException("Unexpected response status: " + status);
 					}
 				}
-
 			};
 			String responseBody = httpclient.execute(httpget, responseHandler);
 			JSONArray array = new JSONArray(responseBody);  
