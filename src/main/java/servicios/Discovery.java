@@ -16,10 +16,8 @@ public class Discovery {
 	}
 
 	
-	private static List<Class> findDataBases(File path) {
+	public static List<Class> findDataBases(File path) {
 		List<Class> classes = new ArrayList<Class>();
-	
-
 		try {
 			if (path.canRead()) {
 				JarFile jar = new JarFile(path);
@@ -40,12 +38,6 @@ public class Discovery {
 		return classes;
 	}
 	
-	public static void main (String [ ] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException { 
-		File f = new File("C:\\Users\\Galileo\\eclipse-workspace\\SiTU\\services\\MongoProyect.jar");
-		
-		Class conexion =findDataBases(f).get(0);
-		
-		System.out.println(findDataBases(f).size());
-}
+
 }
 
