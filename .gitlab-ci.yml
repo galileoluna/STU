@@ -20,6 +20,7 @@ build:
     paths:
       - build
       - .gradle
+      - services
   artifacts:
     when: always
     paths:
