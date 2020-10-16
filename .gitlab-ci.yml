@@ -24,6 +24,7 @@ build:
   artifacts:
     when: always
     paths:
+      - services
       - build/libs/*.jar
       
 test:all-tests:
@@ -42,7 +43,7 @@ test:all-tests:
         - mkdir -p public || true
         - mv build/reports/jacoco/test/html public/code-coverage-reports
         - mv build/reports/tests/test public/test-reports
-        - ls services
+        - ls services/mongo
 
     artifacts:
         when: always
