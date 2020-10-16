@@ -44,7 +44,8 @@ test:all-tests:
         - mkdir -p public || true
         - mv build/reports/jacoco/test/html public/code-coverage-reports
         - mv build/reports/tests/test public/test-reports
-        - ls services/mongo
+        - cd services/mongo
+        - pwd
 
     artifacts:
         when: always
