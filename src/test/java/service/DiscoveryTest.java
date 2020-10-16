@@ -13,7 +13,7 @@ public class DiscoveryTest {
 	@Test
 	public void testGetMongo() throws Exception {
 		Discovery findMongo = new Discovery();
-		File f = new File("services/mongo/mongoproyect.jar");
+		File f = new File("./services/mongo/mongoproyect.jar");
 		assertEquals(3,Discovery.findDataBases(f).size());
 	}
 }
