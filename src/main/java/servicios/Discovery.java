@@ -41,7 +41,7 @@ public class Discovery {
 	}
 	
 	public static void main (String [ ] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException { 
-		File f = new File("C:\\Users\\Galileo\\eclipse-workspace\\SiTU\\services\\mongo\\mongoproyect.jar");
+		File f = new File("C:\\Users\\Galileo\\eclipse-workspace\\SiTU\\services\\MongoProyect.jar");
 		
 		Class conexion =findDataBases(f).get(0);
 		

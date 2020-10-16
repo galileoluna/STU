@@ -194,13 +194,6 @@ public static ArrayList<Inscripcion> getInscripciones()  throws Exception{
 }
 	
 	
-	public final static void main(String[] args) throws Exception {
-		
-			System.out.println(getMaterias().size());
-			System.out.println(getAlumnos().size());
-			System.out.println(getInscripciones().size());
-	
-	}
 
 
 }
