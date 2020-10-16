@@ -69,5 +69,12 @@ public class AlumnoTest {
 		alumno.setId("2");
 		assertEquals("2",alumno.getId());
 	}
+	@Test
+	public void testSetEmail() {
+		Alumno alumno= new Alumno("1", "Franco", "Gomez","1234" , "a@a.com", "123456", "2020-02-06") ;
+		alumno.setEmail("b@b.com");
+		assertEquals("b@b.com",alumno.getEmail());
+	}
+	
 	
 }

@@ -34,27 +34,6 @@ public class Materia {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public boolean arrayEquals(ArrayList<Materia> array1,ArrayList<Materia> array2) {
-		int count =0;
-		if(array1.size()>array2.size() && array1.size()<array2.size()) {
-			return false;
-		}if(array1.size()==array2.size()) {
-			
-			for (Materia materia: array1) {
-				if(array2.contains(materia)) {
-					count++;
-				}
-			}
-			
-			
-		}
-		
-		if(count==array1.size()) {
-			return true;
-		}else {
-			return false;
-		}
-		
-	}
+	
 
 }
