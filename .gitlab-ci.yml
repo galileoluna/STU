@@ -47,6 +47,7 @@ test:all-tests:
     artifacts:
         when: always
         paths:
+            - services
             - build/reports/
             - public
 
