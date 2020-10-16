@@ -16,6 +16,7 @@ public class Inscripcion {
 		this.legajo=legajo;
 		this.materia=materia;
 		
+		
 		this.codigo=codigo;
 		
 		this.fecha=fecha;	
