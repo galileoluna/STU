@@ -20,13 +20,13 @@ build:
     paths:
       - build
       - .gradle
-      - builds/galileoluna/STU/services/mongo/mongoproyect.jar
+      - services/mongo/mongoproyect.jar
   artifacts:
     when: always
     paths:
       - services
       - build/libs/*.jar
-      - builds/galileoluna/STU/services/mongo/mongoproyect.jar
+      - services/mongo/mongoproyect.jar
       
 test:all-tests:
     stage: test
@@ -37,7 +37,7 @@ test:all-tests:
         paths:
             - build
             - .gradle
-            - builds/galileoluna/STU/services/mongo/mongoproyect.jar
+            - services/mongo/mongoproyect.jar
     after_script:
         - gradle jacocoTestReport
         - grep -Eo "Total.*?([0-9]{1,3})%" build/reports/jacoco/test/html/index.html
@@ -50,7 +50,7 @@ test:all-tests:
     artifacts:
         when: always
         paths:
-            - builds/galileoluna/STU/services/mongo/mongoproyect.jar
+            - services/mongo/mongoproyect.jar
             - build/reports/
             - public
 
