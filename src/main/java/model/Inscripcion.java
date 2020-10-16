@@ -7,6 +7,7 @@ public class Inscripcion {
 	public String legajo;
 	public String materia;
 	public String codigo;
+	
 	public String fecha;
 	
 	public Inscripcion(String id,String alumno,String legajo,String materia,String codigo,String fecha) {
