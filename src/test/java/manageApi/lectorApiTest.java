@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
+import gateway.lectorApi;
 import model.Alumno;
 import model.Inscripcion;
 import model.Materia;
