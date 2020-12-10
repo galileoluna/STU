@@ -6,5 +6,5 @@ import java.util.ArrayList;
 import model.Materia;
 
 public interface Materias {
-	ArrayList<Materia> getMaterias() throws IOException;
+	public static  ArrayList<Materia> getMaterias() throws IOException;
 }

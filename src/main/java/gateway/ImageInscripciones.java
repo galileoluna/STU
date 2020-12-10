@@ -18,8 +18,7 @@ import model.Inscripcion;
 
 public class ImageInscripciones implements Inscripciones{
 
-	@Override
-	public ArrayList<Inscripcion> getInscripciones() throws IOException {
+	public static ArrayList<Inscripcion> getInscripciones() throws IOException {
 		ArrayList<Inscripcion> inscripciones = new ArrayList<Inscripcion>();
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		try {

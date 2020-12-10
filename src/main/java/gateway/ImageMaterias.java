@@ -18,7 +18,7 @@ import model.Materia;
 
 public class ImageMaterias implements Materias{
 
-	public ArrayList<Materia> getMaterias() throws IOException {
+	public static ArrayList<Materia> getMaterias() throws IOException {
 		ArrayList<Materia> materias = new ArrayList<Materia>();	
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		try {

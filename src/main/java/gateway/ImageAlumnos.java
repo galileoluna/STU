@@ -18,7 +18,7 @@ import model.Alumno;
 
 public class ImageAlumnos implements Alumnos {
 
-	public ArrayList<Alumno> getAlumnos() throws IOException {
+	public static  ArrayList<Alumno> getAlumnos() throws IOException {
 		ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		try {
@@ -60,5 +60,8 @@ public class ImageAlumnos implements Alumnos {
 		}	
 		return alumnos;
 	}
-
+	public static void main(String args[]) throws Exception {
+		ArrayList<Alumno> al = getAlumnos();
+		System.out.println(al.size());
+	}
 }

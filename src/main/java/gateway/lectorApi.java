@@ -27,6 +27,7 @@
 package gateway;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -183,7 +184,10 @@ public static ArrayList<Inscripcion> getInscripciones()  throws Exception{
 	}	
 	return inscripciones;
 }
-	
+public static void main(String args[]) throws Exception {
+	ArrayList<Alumno> al =getAlumnos();
+	System.out.println(al.size());
+}
 	
 
 

@@ -6,5 +6,5 @@ import java.util.ArrayList;
 import model.Alumno;
 
 public interface Alumnos {
-	 ArrayList<Alumno> getAlumnos() throws IOException;
+	public static ArrayList<Alumno> getAlumnos() throws IOException;
 }

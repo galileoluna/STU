@@ -6,5 +6,5 @@ import java.util.ArrayList;
 import model.Inscripcion;
 
 public interface Inscripciones {
-	 ArrayList<Inscripcion> getInscripciones() throws IOException;
+	 public static ArrayList<Inscripcion> getInscripciones() throws IOException;
 }

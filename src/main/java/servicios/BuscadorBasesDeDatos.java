@@ -14,10 +14,8 @@ public class BuscadorBasesDeDatos {
 	private static String fromFileToClassName(final String fileName) {
 		return fileName.substring(0, fileName.length() - 6).replaceAll("/|\\\\", "\\.");
 	}
-
-	
-	public static List<Class> findDataBases(File path) {
-		List<Class> classes = new ArrayList<Class>();
+	public static ArrayList<Class> findDataBases(File path) {
+		ArrayList<Class> classes = new ArrayList<Class>();
 		try {
 			if (path.canRead()) {
 				JarFile jar = new JarFile(path);
@@ -34,10 +32,6 @@ public class BuscadorBasesDeDatos {
 		} catch (Exception e) {
 			throw new RuntimeException("Failed to read classes from jar file: " + path, e);
 		}
-
 		return classes;
 	}
-	
-
 }
-

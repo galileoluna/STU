@@ -47,6 +47,12 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="src/test/java/service/stublockchain.jar"/>
 	<classpathentry kind="lib" path="src/test/java/service/mongoproyect.jar"/>
+	<classpathentry kind="lib" path="commons-logging-1.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/Galileo/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.7/1f45c6a397feeb46da75425619333d1cc6f90f78/mongo-java-driver-3.12.7.jar" sourcepath="C:/Users/Galileo/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.7/61f586a5ad690e61260a85541a7c6956be05e6e6/mongo-java-driver-3.12.7-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>
