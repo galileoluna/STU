@@ -6,21 +6,21 @@ import java.io.File;
 
 import org.junit.Test;
 
-import servicios.Discovery;
+import servicios.BuscadorBasesDeDatos;
 
-public class DiscoveryTest {
+public class BuscadorBaseDeDatosTest {
 	
 	@Test
 	public void testGetMongo() throws Exception {
-		Discovery findMongo = new Discovery();
+		BuscadorBasesDeDatos findMongo = new BuscadorBasesDeDatos();
 		File f = new File("./services/mongo/mongoproyect.jar");
-		assertEquals(3,Discovery.findDataBases(f).size());
+		assertEquals(3,BuscadorBasesDeDatos.findDataBases(f).size());
 	}
 	
 	@Test
 	public void testGetBlockChain() throws Exception {
-		Discovery findBlockchain = new Discovery();
+		BuscadorBasesDeDatos findBlockchain = new BuscadorBasesDeDatos();
 		File f = new File("./services/blockchain/stublockchain.jar");
-		assertEquals(11,Discovery.findDataBases(f).size());
+		assertEquals(11,BuscadorBasesDeDatos.findDataBases(f).size());
 	}
 }

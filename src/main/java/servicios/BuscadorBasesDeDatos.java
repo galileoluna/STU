@@ -10,7 +10,7 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
 
-public class Discovery {
+public class BuscadorBasesDeDatos {
 	private static String fromFileToClassName(final String fileName) {
 		return fileName.substring(0, fileName.length() - 6).replaceAll("/|\\\\", "\\.");
 	}

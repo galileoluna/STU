@@ -5,15 +5,15 @@ import java.io.File;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
-import servicios.Discovery;
+import servicios.BuscadorBasesDeDatos;
 
 public class conexion {
 	
 	
 	public void mongoConexion() {
-		Discovery findMongo = new Discovery();
+		BuscadorBasesDeDatos findMongo = new BuscadorBasesDeDatos();
 		File f = new File("./services/mongo/mongoproyect.jar");
-		Class conec = Discovery.findDataBases(f).get(0);
+		Class conec = BuscadorBasesDeDatos.findDataBases(f).get(0);
 		
 		Method m[] = conec.getMethods();
 	
@@ -21,9 +21,9 @@ public class conexion {
 	}
 	
 	public static void main(String args[]) throws ClassNotFoundException {
-		Discovery findMongo = new Discovery();
+		BuscadorBasesDeDatos findMongo = new BuscadorBasesDeDatos();
 		File f = new File("./services/mongo/mongoproyect.jar");
-		Class conec = Discovery.findDataBases(f).get(0);
+		Class conec = BuscadorBasesDeDatos.findDataBases(f).get(0);
 		
 		
 		
