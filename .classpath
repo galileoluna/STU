@@ -26,6 +26,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="services/blockchain/stublockchain.jar"/>
+	<classpathentry kind="lib" path="services/mongo/mongoproyect.jar"/>
 	<classpathentry kind="src" path="/hoaxify"/>
 	<classpathentry kind="lib" path="C:/Users/Galileo/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar" sourcepath="C:/Users/Galileo/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200-sources.jar">
 		<attributes>
