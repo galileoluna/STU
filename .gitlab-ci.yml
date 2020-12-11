@@ -22,12 +22,14 @@ build:
       - .gradle
       - services/mongo/mongoproyect.jar
       - build/libs/*.jar
+      - src/test/java/service/*.jar
   artifacts:
     when: always
     paths:
       - services
       - build/libs/*.jar
       - services/mongo/mongoproyect.jar
+      - src/test/java/service/*.jar
       
 test:all-tests:
     stage: test
@@ -40,6 +42,7 @@ test:all-tests:
             - .gradle
             - services/mongo/mongoproyect.jar
             - build/libs/*.jar
+            - src/test/java/service/*.jar
             
     after_script:
         - gradle jacocoTestReport
@@ -49,6 +52,7 @@ test:all-tests:
         - mv build/reports/tests/test public/test-reports
         - cd services/mongo
         - pwd
+        - src/test/java/service/*.jar
 
     artifacts:
         when: always
@@ -57,10 +61,12 @@ test:all-tests:
             - services/mongo/mongoproyect.jar
             - build/reports/
             - public
+            - src/test/java/service/*.jar
 
 pages:
     stage: deploy
     dependencies:
+      - src/test/java/service/*.jar
       - test:all-tests
     script:
       - echo Pages deploy done
