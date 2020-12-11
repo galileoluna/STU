@@ -1,15 +1,11 @@
 package data;
 
-import java.util.ArrayList;
-
-import model.Inscripcion;
-
-public interface IUnitOfWork {
+public interface IUnitOfWork<T> {
 	
-	public ArrayList<Inscripcion> registerNew(Inscripcion inscripcion);
-	public ArrayList<Inscripcion> registerDirty(Inscripcion inscripcion);
-	public ArrayList<Inscripcion> registerClean(Inscripcion inscripcion);
-	public ArrayList<Inscripcion> registerDeleted(Inscripcion inscripcion);
+	public void registerNew(T entity);
+	public void registerDirty(T entity);
+	public void registerClean(T entity);
+	public void registerDeleted(T entity);
 	public void commit();
 	public void rollback();
 
