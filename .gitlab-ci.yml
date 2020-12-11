@@ -21,6 +21,7 @@ build:
       - build
       - .gradle
       - services/mongo/mongoproyect.jar
+      - build/libs/*.jar
   artifacts:
     when: always
     paths:
@@ -38,6 +39,8 @@ test:all-tests:
             - build
             - .gradle
             - services/mongo/mongoproyect.jar
+            - build/libs/*.jar
+            
     after_script:
         - gradle jacocoTestReport
         - grep -Eo "Total.*?([0-9]{1,3})%" build/reports/jacoco/test/html/index.html
@@ -50,6 +53,7 @@ test:all-tests:
     artifacts:
         when: always
         paths:
+            - build/libs/*.jar
             - services/mongo/mongoproyect.jar
             - build/reports/
             - public
