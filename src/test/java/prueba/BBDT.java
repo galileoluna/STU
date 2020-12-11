@@ -16,11 +16,12 @@ public class BBDT {
 		File f = new File("./mongo.jar");
 		assertEquals(3,BuscadorBasesDeDatos.findDataBases(f).size());
 	}
-	*/
+	
 	@Test
 	public void testGetBlockChain() throws Exception {
 		BuscadorBasesDeDatos findBlockchain = new BuscadorBasesDeDatos();
 		File f = new File("./service/stublockchain.jar");
 		assertEquals(11,BuscadorBasesDeDatos.findDataBases(f).size());
 	}
+	*/
 }
