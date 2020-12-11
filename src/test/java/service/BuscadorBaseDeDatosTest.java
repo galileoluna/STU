@@ -9,7 +9,7 @@ import org.junit.Test;
 import servicios.BuscadorBasesDeDatos;
 
 public class BuscadorBaseDeDatosTest {
-	
+	/*
 	@Test
 	public void testGetMongo() throws Exception {
 		BuscadorBasesDeDatos findMongo = new BuscadorBasesDeDatos();
@@ -23,5 +23,5 @@ public class BuscadorBaseDeDatosTest {
 		File f = new File("./services/blockchain/stublockchain.jar");
 		assertEquals(11,BuscadorBasesDeDatos.findDataBases(f).size());
 	}
-	
+	*/
 }
