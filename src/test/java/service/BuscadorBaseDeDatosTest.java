@@ -13,14 +13,14 @@ public class BuscadorBaseDeDatosTest {
 	@Test
 	public void testGetMongo() throws Exception {
 		BuscadorBasesDeDatos findMongo = new BuscadorBasesDeDatos();
-		File f = new File("./src/test/java/service/mongo.jar");
-		assertEquals(9,BuscadorBasesDeDatos.findDataBases(f).size());
+		File f = new File("./services/mongo/mongoproyect.jar");
+		assertEquals(3,BuscadorBasesDeDatos.findDataBases(f).size());
 	}
 	
 	@Test
 	public void testGetBlockChain() throws Exception {
 		BuscadorBasesDeDatos findBlockchain = new BuscadorBasesDeDatos();
-		File f = new File("./src/test/java/service/stublockchain.jar");
+		File f = new File("./services/blockchain/stublockchain.jar");
 		assertEquals(11,BuscadorBasesDeDatos.findDataBases(f).size());
 	}
 	*/
