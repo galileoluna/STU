@@ -1,6 +1,7 @@
 package data;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 import model.Inscripcion;
@@ -18,6 +19,25 @@ public class InscripcionUOW implements IUnitOfWork<Inscripcion>{
 		this.inscripcionMapper = inscripcionMapper;
 	}
 
+	public InscripcionUOW(ArrayList<Inscripcion> inscripciones, InscripcionMapper inscripcionMapper) {
+		super();
+		this.context = new HashMap<String, ArrayList<Inscripcion>>();
+		this.clasificarInscripcion(inscripciones);
+		this.inscripcionMapper = inscripcionMapper;
+	}
+
+	
+	public void clasificarInscripcion( ArrayList<Inscripcion> inscripciones) {
+		for (Inscripcion inscripcion : inscripciones) {
+			if (inscripcionMapper.find(inscripcion.getId()).equals(null)) {
+				registerNew(inscripcion);
+			}
+			else {
+				registerDirty(inscripcion);
+			}
+		} 
+	}
+	
 	@Override
 	public void registerNew(Inscripcion inscripcion) {
 		register(inscripcion, "INSERT");
