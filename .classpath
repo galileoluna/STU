@@ -29,7 +29,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_251"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
 	<classpathentry kind="lib" path="services/mongo/mongoproyect.jar"/>
-	<classpathentry kind="lib" path="services/blockchain/stublockchain.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Galileo/.gradle/caches/modules-2/files-2.1/org.json/json/20200518/41a767de4bde8f01d53856b905c49b2db8862f13/json-20200518.jar" sourcepath="C:/Users/Galileo/.gradle/caches/modules-2/files-2.1/org.json/json/20200518/ceb261c0ee9e87e2c4cb51ac95209006a3a2bd4c/json-20200518-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -45,9 +44,10 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="src/test/java/service/stublockchain.jar"/>
-	<classpathentry kind="lib" path="src/test/java/service/mongoproyect.jar"/>
 	<classpathentry kind="lib" path="commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="services/block/stublockchain.jar"/>
+	<classpathentry kind="lib" path="src/test/java/service/stublockchain.jar"/>
+	<classpathentry kind="lib" path="src/test/java/service/mongo.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="lib" path="C:/Users/Galileo/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.7/1f45c6a397feeb46da75425619333d1cc6f90f78/mongo-java-driver-3.12.7.jar" sourcepath="C:/Users/Galileo/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.12.7/61f586a5ad690e61260a85541a7c6956be05e6e6/mongo-java-driver-3.12.7-sources.jar">
 		<attributes>
