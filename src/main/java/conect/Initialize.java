@@ -46,7 +46,7 @@ public class Initialize {
 	}
 	public Method[] getMongoQuerys() {
 		BuscadorBasesDeDatos findMongo = new BuscadorBasesDeDatos();
-		File f = new File("./services/mongo/mongoproyect.jar");
+		File f = new File("./src/test/java/service/mongoproyect.jar");
 		Class conec = BuscadorBasesDeDatos.findDataBases(f).get(1);
 		Method metodos[] = conec.getMethods();
 		//"mongodb+srv://admin:admin@cluster0.ui4uq.mongodb.net/STU?retryWrites=true&w=majority"
@@ -54,7 +54,7 @@ public class Initialize {
 	}
 	public Method[] getRequest() {
 		BuscadorBasesDeDatos findBlockchain = new BuscadorBasesDeDatos();
-		File f = new File("./services/blockchain/stublockchain.jar");
+		File f = new File("./src/test/java/service/stublockchain.jar");
 		ArrayList<Class> conec =BuscadorBasesDeDatos.findDataBases(f);
 		Method[] metodos= conec.get(9).getMethods();
 		int tmn =metodos.length;
@@ -73,7 +73,7 @@ public class Initialize {
 	}
 	public static void main(String args[]) throws ClassNotFoundException, NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		BuscadorBasesDeDatos findMongo = new BuscadorBasesDeDatos();
-		File f = new File("./services/mongo/mongoproyect.jar");
+		File f = new File("./src/test/java/service/mongoproyect.jar");
 		ArrayList<Class> conec =BuscadorBasesDeDatos.findDataBases(f);
 		//6 APi gateway
 		Method[] metodos= conec.get(0).getMethods();
