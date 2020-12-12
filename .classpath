@@ -25,8 +25,8 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="services/blockchain/stublockchain.jar"/>
-	<classpathentry kind="lib" path="services/mongo/mongoproyect.jar"/>
+	<classpathentry kind="lib" path="src/test/java/service/mongoproyect.jar"/>
+	<classpathentry kind="lib" path="src/test/java/service/stublockchain.jar"/>
 	<classpathentry kind="src" path="/hoaxify"/>
 	<classpathentry kind="lib" path="C:/Users/Galileo/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar" sourcepath="C:/Users/Galileo/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200-sources.jar">
 		<attributes>
