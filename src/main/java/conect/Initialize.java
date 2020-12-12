@@ -71,31 +71,4 @@ public class Initialize {
 		}
 		return finales;
 	}
-	public static void main(String args[]) throws ClassNotFoundException, NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-		BuscadorBasesDeDatos findMongo = new BuscadorBasesDeDatos();
-		File f = new File("./src/test/java/service/mongoproyect.jar");
-		ArrayList<Class> conec =BuscadorBasesDeDatos.findDataBases(f);
-		//6 APi gateway
-		Method[] metodos= conec.get(0).getMethods();
-		int tmn =metodos.length;
-		Method a= null;
-		Method b= null;
-		Method[] finales = {a,b};
-		System.out.println(metodos.length);
-		for(int i=0;i<tmn-1;i++) {
-			System.out.println(metodos[i].toString());
-			if(metodos[i].toString().equalsIgnoreCase("public org.json.JSONArray stublockchain.ApiGateway.getInscripciones(java.lang.String) throws java.io.IOException")) {
-				finales[0]=metodos[i];
-			}
-			if(metodos[i].toString().equalsIgnoreCase("public void stublockchain.ApiGateway.insertInscripcion(org.json.JSONObject) throws java.io.IOException")) {
-				finales[1]=metodos[i];
-			}
-		}
-		System.out.println(finales[0].toString());
-		System.out.println(finales[1].toString());
-		Method getInscripciones = conec.get(6).getDeclaredMethod("getInscripciones", null);
-		Object instance = null;
-		JSONArray inscripciones = (JSONArray) getInscripciones.invoke(instance, null);
-	}
-
 }

@@ -31,6 +31,6 @@ public class TestInitialize {
 	public void testGetMongo(){
 		Initialize init= new Initialize();	
 		java.lang.reflect.Method[] metodos = init.getRequest();
-		assertEquals(4,metodos.length);
+		assertEquals(2,metodos.length);
 	}
 }
