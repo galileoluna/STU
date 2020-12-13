@@ -31,7 +31,6 @@ public class TestAPIGateway {
 		ApiGateway lector = new ApiGateway();
 		ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
 		Alumno alumno= new Alumno("5f6d0cc13d55c27575758e67","leonardo","cantarini","1995-06-30T00:00:00Z","leonardocantarini@gmail.com ","$2a$08$u0HnyGTdTioXna9iV2wmo.szoynCEaQ8kVALNUWH5Mi.d3mFh9dFu","12345678");
-		
 		alumnos.add(alumno);
 		
 		ArrayList<Alumno> alumnosAPI=ApiGateway.getAlumnos();
