@@ -23,7 +23,7 @@ dependencies {
 
 		compile fileTree(include: ['*.jar'], dir: 'services')
 		compile files('services/mongo/mongoproyect.jar')
-		compile files('services/blockchian/stublockchain.jar')
+		compile files('services/blockchain/stublockchain.jar')
 
 		// https://mvnrepository.com/artifact/org.mockito/mockito-core
 		testCompile group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
