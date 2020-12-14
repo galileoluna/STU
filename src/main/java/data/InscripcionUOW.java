@@ -9,17 +9,17 @@ import model.Inscripcion;
 public class InscripcionUOW implements IUnitOfWork<Inscripcion>{
 	
 	private final Map<String, ArrayList<Inscripcion>> context;
-	private final InscripcionMapper inscripcionMapper;
+	private final InscripcionBlockchainMapper inscripcionMapper;
 	
 	
 
-	public InscripcionUOW(Map<String, ArrayList<Inscripcion>> context, InscripcionMapper inscripcionMapper) {
+	public InscripcionUOW(Map<String, ArrayList<Inscripcion>> context, InscripcionBlockchainMapper inscripcionMapper) {
 		super();
 		this.context = context;
 		this.inscripcionMapper = inscripcionMapper;
 	}
 
-	public InscripcionUOW(ArrayList<Inscripcion> inscripciones, InscripcionMapper inscripcionMapper) {
+	public InscripcionUOW(ArrayList<Inscripcion> inscripciones, InscripcionBlockchainMapper inscripcionMapper) {
 		super();
 		this.context = new HashMap<String, ArrayList<Inscripcion>>();
 		this.clasificarInscripcion(inscripciones);
