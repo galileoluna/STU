@@ -15,21 +15,23 @@
 
 ## Profesores:
 
-Lautaro Tacchini: <ltacchini@campus.ungs.edu.ar> 
-Javier Martínez-Viademonte: <javiermv@ungs.edu.ar> 
-Matías Raia: <mhraia@yahoo.com.ar>
+- Lautaro Tacchini: <ltacchini@campus.ungs.edu.ar> 
+- Javier Martínez-Viademonte: <javiermv@ungs.edu.ar> 
+- Matías Raia: <mhraia@yahoo.com.ar>
 
 ## Alumnos:
 
-Leonardo Cantarini: <leonardocantarini@gmail.com>
-Galileo Luna: <galileoungs@gmail.com>
+- Leonardo Cantarini: <leonardocantarini@gmail.com>
+- Galileo Luna: <galileoungs@gmail.com>
 
 
-Repo:
+- Repo:<https://gitlab.com/galileoluna/STU/-/tree/revert-28579f61> 
+- API: <https://gitlab.com/galileoluna/apiUNGS> 
+- Cubrimiento:[https://galileoluna.gitlab.io/STU/code-cover](https://galileoluna.gitlab.io/STU/code-coverage-reports/)[age-reports/](https://galileoluna.gitlab.io/STU/code-coverage-reports/) 
+- MongoProyect:[https://gitlab.com/leonardocantarini/mong](https://gitlab.com/leonardocantarini/mongoproyect) [oproyect](https://gitlab.com/leonardocantarini/mongoproyect)
 
-<https://gitlab.com/galileoluna/STU/-/tree/revert-28579f61> API: <https://gitlab.com/galileoluna/apiUNGS> Cubrimiento:[https://galileoluna.gitlab.io/STU/code-cover](https://galileoluna.gitlab.io/STU/code-coverage-reports/) [age-reports/](https://galileoluna.gitlab.io/STU/code-coverage-reports/) MongoProyect:[https://gitlab.com/leonardocantarini/mong](https://gitlab.com/leonardocantarini/mongoproyect) [oproyect](https://gitlab.com/leonardocantarini/mongoproyect)
-
-Blockchain: <https://gitlab.com/galileoluna/stublockchain> BlockchainProyect: <https://gitlab.com/galileoluna/blockchainproyect>
+- Blockchain: <https://gitlab.com/galileoluna/stublockchain> 
+- BlockchainProyect: <https://gitlab.com/galileoluna/blockchainproyect>
 
 
 
