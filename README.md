@@ -11,17 +11,15 @@ Proyecto Profesional 2
 
 
 
-**Proyecto:**	Sistema	de	Transacciones
+# **Proyecto:**	Sistema	de	Transacciones Universitario
 
-Universitario
-
-Profesores:
+## Profesores:
 
 Lautaro Tacchini: <ltacchini@campus.ungs.edu.ar> 
 Javier Martínez-Viademonte: <javiermv@ungs.edu.ar> 
 Matías Raia: <mhraia@yahoo.com.ar>
 
-Alumnos:
+## Alumnos:
 
 Leonardo Cantarini: <leonardocantarini@gmail.com>
 Galileo Luna: <galileoungs@gmail.com>
@@ -36,7 +34,7 @@ Blockchain: <https://gitlab.com/galileoluna/stublockchain> BlockchainProyect: <h
 
 
 
-**Introducción**
+## **Introducción**
 
 
 El sistema Guaraní es el sistema de registro de las actividades de la gestión académica dentro de la universidad desde que un alumno se inscribe hasta que egresa. Este sistema está persistido en una base de datos relacional llamada PostgreSQL, que tiene el inconveniente de no ser lo suficientemente transparente, ya que este tipo de base de datos puede ser modificado por alguien con permisos especiales sin generar algún tipo de aviso.
@@ -50,7 +48,7 @@ Para nuestra segunda iteración, nosotros reemplazamos el lectorAPI por un APIGa
 
 
 
-**Diseño**
+## **Diseño**
 
 
 Nuestro diseño consiste en la persistencia de los datos de la API de la universidad, para luego persistir los objetos en memoria, parsear el json a sus respectivos objetos, y luego persistida, y sincronizada con las múltiples bases de datos.
@@ -122,7 +120,7 @@ Y al final nosotros para mantener la consistencia entre la api , y las múltiple
 
 
 
-**U ser Stories**
+## **User Stories**
 
 
 
@@ -158,7 +156,7 @@ Y al final nosotros para mantener la consistencia entre la api , y las múltiple
 
 
 
-**Cobertura**
+## **Cobertura**
 
 
 ![](STU.docx.011.png)
