@@ -24,9 +24,10 @@
 - Leonardo Cantarini: <leonardocantarini@gmail.com>
 - Galileo Luna: <galileoungs@gmail.com>
 
+#Repositorios
 
-- Repo:<https://gitlab.com/galileoluna/STU/-/tree/revert-28579f61> 
-- API: <https://gitlab.com/galileoluna/apiUNGS> 
+- STU:<https://gitlab.com/galileoluna/STU/-/tree/revert-28579f61> 
+- API GUARANI: <https://gitlab.com/galileoluna/apiUNGS> 
 - Cubrimiento:[https://galileoluna.gitlab.io/STU/code-cover](https://galileoluna.gitlab.io/STU/code-coverage-reports/)[age-reports/](https://galileoluna.gitlab.io/STU/code-coverage-reports/) 
 - MongoProyect:[https://gitlab.com/leonardocantarini/mong](https://gitlab.com/leonardocantarini/mongoproyect) [oproyect](https://gitlab.com/leonardocantarini/mongoproyect)
 
