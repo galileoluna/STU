@@ -6,15 +6,12 @@
 [![coverage report](https://gitlab.com/galileoluna/STU/badges/master/coverage.svg)](https://galileoluna.gitlab.io/STU/code-coverage-reports)
 
 
-` `PAGE 10
-
-` `PAGE 10
 
 Proyecto Profesional 2
 
 
 
-**P	royecto:**	Sistema	de	Transacciones
+**Proyecto:**	Sistema	de	Transacciones
 
 Universitario
 
