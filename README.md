@@ -7,7 +7,7 @@
 
 
 
-Proyecto Profesional 2
+# Proyecto Profesional 2
 
 
 
@@ -58,6 +58,7 @@ Consumiendo api
 
 Consumiendo apiEl programa empieza, con la clase APIGateway, que posee tres funciones, encargadas de la lectura de la API del sistema universitario, **apiungs**, cada una de estas tres funciones serán las encargadas de tomar todos los datos actualizados de la facultad en tiempo real.
 
+![](STU.docx.002.jpeg)
 
 
 Luego, al persistir el modelo, contaremos con subproyectos que nos brindaran abstracción a la hora del manejo de las bases de datos. Para poder encontrarlo, utilizaremos la técnica de inyección de dependencias, en la cual tendremos la clase BuscadorBasesDeDatos, que tiene la función FindDataBases(),que nosotros le pasaremos el path que apunte hacia un archivo .jar Esta función es la encargada de encontrar las clases necesarias para el manejo de las bases de datos.Nos retorna una Lista con las clases del proyecto que nosotros le pasamos, por ejemplo cuando le pasamos mongoProyect, nos retorna conexionMongo y consultaMongo.
