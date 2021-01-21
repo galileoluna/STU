@@ -24,7 +24,7 @@
 - Leonardo Cantarini: <leonardocantarini@gmail.com>
 - Galileo Luna: <galileoungs@gmail.com>
 
-#Repositorios
+# Repositorios
 
 - STU:<https://gitlab.com/galileoluna/STU/-/tree/revert-28579f61> 
 - API GUARANI: <https://gitlab.com/galileoluna/apiUNGS> 
