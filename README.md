@@ -66,13 +66,9 @@ Luego, al persistir el modelo, contaremos con subproyectos que nos brindaran abs
 
 ![](STU.docx.004.jpeg)
 
-Class.ForName()
 
-Class.ForName()
 
-Luego el MongoProyect, es el encargado de la implementación de la base de datos,
-
-ya que esta realiza la conexion, como también , abstrae todo lo que tiene que ver con la conexión a la base de datos. MongoProyect posee dos clases que son las encargadas de la conexión, llamadas **conexiónMongo** y **consultaMongo.** Esta última será la encargada de procesar las querys, e interactuar directamente con la base de datos.
+Luego el MongoProyect, es el encargado de la implementación de la base de datos,ya que esta realiza la conexion, como también , abstrae todo lo que tiene que ver con la conexión a la base de datos. MongoProyect posee dos clases que son las encargadas de la conexión, llamadas **conexiónMongo** y **consultaMongo.** Esta última será la encargada de procesar las querys, e interactuar directamente con la base de datos.
 
 
 
@@ -83,20 +79,10 @@ Por otro lado tenemos otro proyecto **STUBlockchain,** o BlockchainProyect, que 
 
 
 
-StuBlockchain
-
-StuBlockchain
-
 A la hora de realizar el DataMapper nosotros poseemos la clase **Initialize** en el cual nosotros,poseemos tres funciones que son las encargadas de devuelven los métodos, este
-
 proceso lo realizamos gracias a class.ForName, de las clases de nuestros proyectos, por  un lado tenemos dos funciones que su función es darnos los métodos para inicializar la base de datos mongo y por otro lado tenemos otra función que nos devuelve las querys que podemos realizar a la base de datos, por otro lado tenemos la función getRequest() que  nos devuelve las request del proyecto stublockchain.
 
 ![](STU.docx.008.jpeg)
-
-
-Interacción InscripcionMapper con MongoProyect
-
-Interacción InscripcionMapper con MongoProyect
 
 
 Para el manejo adecuado de las transacciones de persistencia tenemos una implementación del patrón Unit Of Work, cuya función es la de mantener actualizados los registros en las bases de datos y mantener un conjunto de operaciones que serán realizadas como una transacción a la base de datos. Esta funcionalidad está representada en la clase **InscripcionesUOW**, la cual recibe por parámetros una lista de inscripciones con sus operaciones necesarias (INSERT, MODIFY, DELETE) que se carga como propiedad "context". Mediante los métodos registerNew(), registerModify() y registerDelete(), se pueden agregar inscripciones con sus respectivas operaciones en el listado context. Luego, una vez que se desea persistir como una transacción, se utiliza el metodo commit(), que implementa los metodos commitNew(), commitModify() y commitDelete() para las operaciones de insert, update y delete en las bases de datos.
@@ -137,16 +123,7 @@ Y al final nosotros para mantener la consistencia entre la api , y las múltiple
 |**User Story 2:**Quiero contar con una implementación de blockchain.|
 | :- |
 |<p>**Criterios de Aceptación**</p><p>1.**TestGetBlockchain():** generamos el bloque génesis.</p>|
-|<p>**Datos de prueba:** Nos retorna</p><p>**ID**: "000000000000000000000000",</p><p>**alumno**: "bloque genesis", **legajo**: "bloque genesis", **materia**: "bloque genesis", **codigo**: "bloque genesis",</p><p>**fecha**: "2020-12-08T00:00:00Z",</p><p>**hashAnterior**:</p><p>"CC50DF82BCF43A7F75AE2169BD255F125D8C36FE6FE420852B4E E9BFB0D34286",</p><p>**hashActual**:</p><p>"970EC274CA867815174EBE4EFF19282000F9495A6C7254E94991</p>|
-
-
-
-|D1FB4DC3DF30"|
-| :- |
-
-
-
-
+|<p>**Datos de prueba:** Nos retorna</p><p>**ID**: "000000000000000000000000",</p><p>**alumno**: "bloque genesis", **legajo**: "bloque genesis", **materia**: "bloque genesis", **codigo**: "bloque genesis",</p><p>**fecha**: "2020-12-08T00:00:00Z",</p><p>**hashAnterior**:</p><p>"CC50DF82BCF43A7F75AE2169BD255F125D8C36FE6FE420852B4E E9BFB0D34286",</p><p>**hashActual**:</p><p>"970EC274CA867815174EBE4EFF19282000F9495A6C7254E94991D1FB4DC3DF30</p>|
 
 
 
