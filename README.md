@@ -17,11 +17,14 @@ Universitario
 
 Profesores:
 
-Lautaro Tacchini: <ltacchini@campus.ungs.edu.ar> Javier Martínez-Viademonte: <javiermv@ungs.edu.ar> Matías Raia: <mhraia@yahoo.com.ar>
+Lautaro Tacchini: <ltacchini@campus.ungs.edu.ar> 
+Javier Martínez-Viademonte: <javiermv@ungs.edu.ar> 
+Matías Raia: <mhraia@yahoo.com.ar>
 
 Alumnos:
 
-Leonardo Cantarini: <leonardocantarini@gmail.com> Galileo Luna: <galileoungs@gmail.com>
+Leonardo Cantarini: <leonardocantarini@gmail.com>
+Galileo Luna: <galileoungs@gmail.com>
 
 
 Repo:
